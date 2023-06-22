@@ -1,0 +1,28 @@
+/* Clock Section ( For Maximum Width 470px ) */
+#clock {
+    margin-top: 40vh;
+}
+
+#time span {
+    height: 70px;
+    width: 50px;
+    font-size: 30px;
+}
+
+#time .text {
+    height: 20px;
+    width: 50px;
+    font-size: 6px;
+}
+
+#time #ampm {
+    height: 20px;
+    width: 30px;
+    font-size: 15px;
+}
+
+
+/* Footer Section ( For Maximum Width 470px ) */
+#footer {
+    font-size: 17px;
+}
