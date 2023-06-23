@@ -1,0 +1,21 @@
+/* Main Section ( For Maximum Width 500px ) */
+#main h2 {
+    font-size: 22px;
+}
+
+#main #final-year {
+    font-size: 3em;
+}
+
+
+/* Countdown Section ( For Maximum Width 500px ) */
+#countdown {
+    display: grid;
+    grid-template: 100px 100px / 100px 100px;
+}
+
+
+/* Footer Section ( For Maximum Width 500px ) */
+#footer {
+    font-size: 17px;
+}
