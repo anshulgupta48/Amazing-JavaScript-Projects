@@ -1,0 +1,23 @@
+/* Clock Section ( For Maximum Width 400px ) */
+#clock {
+    height: 250px;
+    width: 250px;
+}
+
+#clock #arrows .hour {
+    height: 60px;
+}
+
+#clock #arrows .minute {
+    height: 90px;
+}
+
+#clock #arrows .second {
+    height: 100px;
+}
+
+
+/* Footer Section ( For Maximum Width 400px ) */
+#footer {
+    font-size: 17px;
+}
