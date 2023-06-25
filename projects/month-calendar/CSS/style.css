@@ -1,0 +1,109 @@
+/* CSS Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+/* Main Section */
+#main {
+    height: 100vh;
+    width: 100%;
+    background-color: salmon;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+
+/* Calendar Section */
+#calendar {
+    height: 520px;
+    width: 450px;
+    color: lightgray;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+
+/* Month Section */
+#calendar #month {
+    height: 120px;
+    width: 100%;
+    background-color: lightseagreen;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#calendar #month h1 {
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+
+/* Weekdays Section */
+#calendar #weekdays {
+    height: 50px;
+    width: 100%;
+    display: flex;
+}
+
+#calendar #weekdays div {
+    width: 100%;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Days Section */
+#calendar #days {
+    width: 100%;
+    padding: 3px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#calendar #days div {
+    height: 50px;
+    width: 57px;
+    font-size: 14px;
+    margin: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#calendar #days .today {
+    background-color: lightseagreen;
+}
+
+#calendar #days div:hover:not(.empty) {
+    border: 2px solid gray;
+    cursor: pointer;
+}
+
+
+/* Footer Section */
+#footer {
+    color: white;
+    background-color: rgb(34, 33, 33);
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+}
+
+.copy,
+.info {
+    padding: 15px;
+}

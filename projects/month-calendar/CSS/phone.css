@@ -1,0 +1,60 @@
+/* Calendar Section ( For Maximum Width 500px ) */
+#calendar {
+    height: 450px;
+    width: 320px;
+    color: lightgray;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+
+/* Weekdays Section  ( For Maximum Width 500px ) */
+#calendar #weekdays {
+    padding: 10px;
+}
+
+
+/* Days Section ( For Maximum Width 500px ) */
+#calendar #days div {
+    height: 45px;
+    width: 38px;
+}
+
+
+/* Footer Section ( For Maximum Width 500px ) */
+#footer {
+    font-size: 18px;
+}
+
+
+@media (max-width: 350px) {
+    /* Calendar Section ( For Maximum Width 350px ) */
+    #calendar {
+        height: 450px;
+        width: 250px;
+        color: lightgray;
+        background-color: black;
+        border-radius: 10px;
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+    }
+
+
+    /* Weekdays Section ( For Maximum Width 350px ) */
+    #calendar #weekdays div {
+        letter-spacing: 0px;
+    }
+
+
+    /* Days Section ( For Maximum Width 350px ) */
+    #calendar #days div {
+        height: 31px;
+        width: 28px;
+    }
+
+    
+    /* Footer Section ( For Maximum Width 350px ) */
+    #footer {
+        font-size: 16px;
+    }
+}
