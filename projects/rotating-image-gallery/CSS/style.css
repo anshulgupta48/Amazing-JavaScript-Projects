@@ -1,0 +1,91 @@
+/* CSS Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* Prompt Section */
+#prompt-container {
+    display: none;
+}
+
+
+/* Main-Section */
+#main {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+
+/* Image Section */
+#image-container {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    transform: perspective(1000px) rotateY(0deg);
+    transform-style: preserve-3d;
+    transition: transform 0.7s;
+}
+
+#image-container span {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
+}
+
+#image-container span img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+
+/* Button Section */
+#button-container {
+    position: relative;
+    width: 80%;
+}
+
+#button-container .btn {
+    position: absolute;
+    bottom: -80px;
+    color: white;
+    background-color: slateblue;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#button-container #previous {
+    left: 20%;
+}
+
+#button-container #next {
+    right: 20%;
+}
+
+
+/* Footer Section */
+#footer {
+    color: white;
+    background-color: rgb(34, 33, 33);
+    text-align: center;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.copy,
+.info {
+    padding: 15px;
+}

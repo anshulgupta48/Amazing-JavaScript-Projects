@@ -1,0 +1,32 @@
+/* Prompt Section ( For Maximum Width 1000px ) */
+#prompt-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #15d515;
+    background-color: black;
+}
+
+#prompt-container h2 {
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+#prompt-container h3 {
+    margin: 25px;
+}
+
+
+/* Main Section ( For Maximum Width 1000px ) */
+#main {
+    display: none;
+}
+
+
+/* Footer Section ( For Maximum Width 1000px ) */
+#footer {
+    font-size: 17px;
+}
