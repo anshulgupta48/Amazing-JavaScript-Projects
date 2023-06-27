@@ -1,0 +1,65 @@
+/* CSS Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* Main Section */
+#main {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Image Section */
+#image-container {
+    height: 80vh;
+    width: 100%;
+    background: url(../Assets/bg.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+/* About Section */
+#about-container h1 {
+    margin: 25px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 40px;
+}
+
+#about-container p {
+    margin: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: gray;
+}
+
+
+/* Footer Section */
+#footer {
+    color: white;
+    background-color: rgb(34, 33, 33);
+    font-size: 20px;
+    margin-top: 23px;
+    padding: 5px;
+    text-align: center;
+}
+
+.copy,
+.info {
+    padding: 15px;
+}
+
+
+/* CSS Properties For Maximum Width 400px */
+@media (max-widht: 400px) {
+
+    /* Footer Section ( For Maximum Width 400px ) */
+    #footer {
+        font-size: 17px;
+    }
+}
