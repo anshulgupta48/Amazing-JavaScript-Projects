@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RT Character Counter - We Are Here to Count Your Entered Words</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 500px)" href="CSS/phone.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- <======== Main Section ========> -->
+        <div id="main">
+
+            <!-- <======== Character-Counter Section ========> -->
+            <div id="character-counter">
+                <h2>Real-Time Character Counter</h2>
+
+
+                <textarea id="textarea" placeholder="Please Write Your Text Here...." maxlength="100"></textarea>
+
+
+                <!-- <======== Word-Counter Section ========> -->
+                <div id="word-counter">
+                    <p>Total Characters: <span id="total-characters">0</span> </p>
+                    <p>Remaining: <span id="remaining-characters">100</span> </p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- <======== Footer Section ========> -->
+        <div id="footer">
+            <p class="copy">Copyright &copy; 2023 RT Character Counter | All Rights Reserved</p>
+            <hr>
+            <p class="info">Design & Developed by Anshul Gupta</p>
+        </div>
+
+    </div>
+
+    <script src="JS/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+/* CSS Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* Main Section */
+#main {
+    height: 100vh;
+    width: 100%;
+    background-color: salmon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Character-Counter Section */
+#character-counter {
+    width: 400px;
+    padding: 20px;
+    background-color: lightpink;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+    font-family: cursive;
+}
+
+#character-counter h2 {
+    margin: 20px 5px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#character-counter textarea {
+    height: 100px;
+    width: 100%;
+    padding: 10px;
+    resize: none;
+    border: solid 2px darkgray;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+
+/* Word-Counter Section */
+#word-counter {
+    display: flex;
+    justify-content: space-between;
+}
+
+#word-counter p {
+    font-size: 18px;
+    color: gray;
+    padding: 20px 5px;
+}
+
+#word-counter #total-characters {
+    color: slateblue;
+}
+
+#word-counter #remaining-characters {
+    color: orangered;
+}
+
+
+/* Footer Section */
+#footer {
+    color: white;
+    background-color: rgb(34, 33, 33);
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+}
+
+.copy,
+.info {
+    padding: 15px;
+}

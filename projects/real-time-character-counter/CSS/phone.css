@@ -1,0 +1,52 @@
+/* Character-Counter Section ( For Maximum Width 500px ) */
+#character-counter {
+    width: 300px;
+}
+
+#character-counter h2 {
+    font-size: 20px;
+}
+
+#character-counter textarea {
+    font-size: 16px;
+}
+
+
+/* Word-Counter Section ( For Maximum Width 500px ) */
+#word-counter {
+    display: block;
+}
+
+#word-counter p {
+    font-size: 16px;
+    padding: 5px;
+}
+
+
+/* Footer Section ( For Maximum Width 500px ) */
+#footer {
+    font-size: 17px;
+}
+
+
+@media (max-width: 400px) {
+
+    /* Character-Counter Section ( For Maximum Width 400px ) */
+    #character-counter {
+        width: 200px;
+    }
+
+    #character-counter h2 {
+        font-size: 19px;
+    }
+
+    #character-counter textarea {
+        font-size: 16px;
+    }
+
+
+    /* Character-Counter Section ( For Maximum Width 400px ) */
+    #footer {
+        font-size: 17px;
+    }
+}
