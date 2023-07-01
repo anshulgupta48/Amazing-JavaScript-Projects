@@ -1,0 +1,118 @@
+/* CSS Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* Main Section */
+#main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+/* Password Section */
+#password-container {
+    width: 500px;
+    background-color: lightpink;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+
+/* Input Section */
+#input-container {
+    margin: 20px 0px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#password-input {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-size: 24px;
+    letter-spacing: 4px;
+}
+
+#password-input {
+    letter-spacing: 0px;
+}
+
+
+/* Copy-Icon Section */
+#copy-icon {
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+#copy-icon:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+
+/* Button Section */
+#btn {
+    color: white;
+    background-color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#btn:hover {
+    background-color: green;
+}
+
+#btn:active {
+    transform: scale(0.95);
+}
+
+
+/* Alert Section */
+#alert-container {
+    height: 50px;
+    width: 300px;
+    background-color: lightgreen;
+    font-size: 20px;
+    border-radius: 10px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+    transition: 0.4s;
+}
+
+.active#alert-container {
+    right: -300px;
+}
+
+
+/* Footer Section */
+#footer {
+    color: white;
+    background-color: rgb(34, 33, 33);
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+}
+
+.copy,
+.info {
+    padding: 15px;
+}
