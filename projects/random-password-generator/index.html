@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Password Generator - Just Copy & Paste the Password</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 600px)" href="CSS/phone.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- <======== Main Section ========> -->
+        <div id="main">
+
+            <!-- <======== Password-Container Section ========> -->
+            <div id="password-container">
+                <h2>Random Password Generator</h2>
+
+
+                <!-- <======== Input-Container Section ========> -->
+                <div id="input-container">
+                    <input type="text" id="password-input" placeholder="Create Password" readonly>
+                    <i class="far fa-copy fa-2x" id="copy-icon"></i>
+                </div>
+
+                <button id="btn">Generate</button>
+            </div>
+
+
+            <!-- <======== Alert-Container Section ========> -->
+            <div id="alert-container" class="active">Password Copied!</div>
+
+        </div>
+
+
+        <!-- <======== Footer Section ========> -->
+        <div id="footer">
+            <p class="copy">Copyright &copy; 2023 Random Password Generator | All Rights Reserved</p>
+            <hr>
+            <p class="info">Design & Developed by Anshul Gupta</p>
+        </div>
+
+    </div>
+
+    <script src="JS/script.js"></script>
+</body>
+
+</html>
