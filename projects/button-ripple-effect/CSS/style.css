@@ -1,0 +1,76 @@
+/* CSS Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* Button-Container Section */
+#button-container {
+    height: 100vh;
+    background-color: lightskyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.btn {
+    color: black;
+    background-color: pink;
+    padding: 20px 40px;
+    border-radius: 5px;
+    font-size: 18px;
+    text-decoration: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+    position: relative;
+    overflow: hidden;
+}
+
+.btn span {
+    position: relative;
+    z-index: 1;
+}
+
+.btn::before {
+    content: " ";
+    background-color: orangered;
+    height: 0px;
+    width: 0px;
+    border-radius: 50%;
+    position: absolute;
+    left: var(--xPos);
+    top: var(--yPos);
+    transform: translate(-50%, -50%);
+    transition: width 0.5s, height 0.5s;
+}
+
+.btn:hover::before {
+    height: 300px;
+    width: 300px;
+}
+
+
+/* Footer Section */
+#footer {
+    color: white;
+    background-color: rgb(34, 33, 33);
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+}
+
+.copy,
+.info {
+    padding: 15px;
+}
+
+
+/* CSS Properties For Maximum Width 400px */
+@media (max-width: 400px) {
+
+    /* Footer Section ( For Maximum Width 400px ) */
+    #footer {
+        font-size: 17px;
+    }
+}
