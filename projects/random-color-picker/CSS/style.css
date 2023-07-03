@@ -1,0 +1,52 @@
+/* CSS Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* Container Section */
+.container h1 {
+    margin: 20px;
+    text-align: center;
+}
+
+
+/* Color-Container Section */
+#color-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.color {
+    height: 150px;
+    width: 300px;
+    margin: 5px;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: orange;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    font-family: cursive;
+    font-size: 25px;
+}
+
+
+/* Footer Section */
+#footer {
+    color: white;
+    background-color: rgb(34, 33, 33);
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 5px;
+    text-align: center;
+}
+
+.copy,
+.info {
+    padding: 15px;
+}

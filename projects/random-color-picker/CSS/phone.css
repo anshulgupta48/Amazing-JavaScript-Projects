@@ -1,0 +1,11 @@
+/* Color-Container Section ( For Maximum Width 400px ) */
+.color {
+    height: 100px;
+    width: 150px;
+}
+
+
+/* Footer Section ( For Maximum Width 400px ) */
+#footer {
+    font-size: 18px;
+}
