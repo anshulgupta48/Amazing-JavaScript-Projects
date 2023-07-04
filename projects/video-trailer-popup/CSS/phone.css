@@ -1,0 +1,37 @@
+/* Movie Section ( For Maximum Width 600px ) */
+#movie-container {
+    max-width: 550px;
+    padding: 0px 25px;
+}
+
+#movie-container h1 {
+    font-weight: 500;
+    font-size: 25px;
+}
+
+#movie-container p {
+    margin: 15px 0px;
+    font-size: 15px;
+}
+
+
+/* Trailer Section ( For Maximum Width 600px ) */
+#trailer-container video {
+    max-width: 400px;
+}
+
+
+/* Footer Section ( For Maximum Width 600px ) */
+#footer {
+    font-size: 17px;
+}
+
+
+/* CSS Properties For Maximum Width 450px */
+@media (max-width: 450px) {
+
+    /* Trailer Section ( For Maximum Width 450px ) */
+    #trailer-container video {
+        max-width: 250px;
+    }
+}

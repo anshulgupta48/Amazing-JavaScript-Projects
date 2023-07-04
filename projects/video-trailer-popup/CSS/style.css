@@ -1,0 +1,109 @@
+/* CSS Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* Main-Container Section */
+#main-container {
+    height: 100vh;
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+
+/* Movie Section */
+#movie-container {
+    max-width: 550px;
+}
+
+#movie-container img {
+    display: inline-block;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+#movie-container h1 {
+    font-weight: 500;
+}
+
+#movie-container p {
+    margin: 15px 0px;
+}
+
+#movie-container .btn {
+    background-color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+#movie-container .btn:hover {
+    background-color: orange;
+}
+
+
+/* Trailer Section */
+.active#trailer-container {
+    visibility: hidden;
+    opacity: 0;
+}
+
+#trailer-container {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.7s;
+}
+
+#trailer-container video {
+    position: relative;
+    max-width: 900px;
+    outline: none;
+}
+
+#trailer-container .close-icon {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* Footer Section */
+#footer {
+    color: white;
+    background-color: rgb(34, 33, 33);
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+}
+
+.copy,
+.info {
+    padding: 15px;
+}
+
+
+/* CSS Properties For Maximum Width 1000px */
+@media (max-width: 1000px) {
+
+    /* Trailer Section ( For Maximum Width 1000px ) */
+    #trailer-container video {
+        max-width: 600px;
+    }
+}
