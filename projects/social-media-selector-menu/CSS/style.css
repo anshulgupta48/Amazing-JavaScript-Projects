@@ -1,0 +1,117 @@
+/* CSS Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* Main-Container Section */
+#main-container {
+    min-height: 100vh;
+    background: linear-gradient(135deg, purple 20%, orange 80%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+
+/* Menu-Container Section */
+#menu-container {
+    width: 300px;
+    padding: 10px;
+    background-color: lightgray;
+    opacity: 0.4;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+#menu-container p {
+    margin: 0px 10px;
+    display: flex;
+    align-items: center;
+}
+
+#menu-container #close-icon {
+    margin: 0px 10px;
+    transition: transform 0.2s;
+}
+
+.hide #close-icon {
+    transform: rotate(180deg);
+}
+
+
+/* List-Container Section */
+#list-container {
+    width: 300px;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: lightgray;
+    opacity: 0.3;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#list-container ul li {
+    padding: 10px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    transition: margin 0.2s linear;
+}
+
+#list-container ul li p {
+    margin: 10px;
+}
+
+#list-container ul li:hover {
+    background-color: darkgray;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.hide#list-container {
+    visibility: hidden;
+}
+
+
+/* Footer Section */
+#footer {
+    color: white;
+    background-color: rgb(34, 33, 33);
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+}
+
+.copy,
+.info {
+    padding: 15px;
+}
+
+
+/* CSS Properties For Maximum Width 400px */
+@media (max-width: 400px) {
+
+    /* Menu-Container Section ( For Maximum Width 400px ) */
+    #menu-container {
+        width: 200px;
+    }
+
+
+    /* List-Container Section ( For Maximum Width 400px ) */
+    #list-container {
+        width: 200px;
+    }
+
+
+    /* Footer Section ( For Maximum Width 400px ) */
+    #footer {
+        font-size: 16px;
+    }
+}
