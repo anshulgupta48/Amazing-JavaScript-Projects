@@ -1,0 +1,71 @@
+/* CSS Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* Main-Container Section */
+#main-container {
+    height: 100vh;
+    background-color: salmon;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+#main-container h2 {
+    font-size: 2rem;
+    color: aliceblue;
+}
+
+
+/* Emoji-Container Section */
+#emoji-container .btn {
+    margin: 20px 0px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 10px;
+    font-size: 5rem;
+    filter: grayscale();
+    transition: filter 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+#emoji-container .btn:hover {
+    filter: grayscale(0);
+}
+
+#emoji-container #emoji-name {
+    color: darkblue;
+    font-weight: 600;
+}
+
+
+/* Footer Section */
+#footer {
+    color: white;
+    background-color: rgb(34, 33, 33);
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+}
+
+.copy,
+.info {
+    padding: 15px;
+}
+
+
+/* CSS Properties For Maximum Width 400px */
+@media (max-width: 400px) {
+
+    /* Footer Section ( For Maximum Width 400px ) */
+    #footer {
+        font-size: 17px;
+    }
+}
