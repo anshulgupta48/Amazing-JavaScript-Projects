@@ -1,0 +1,149 @@
+/* CSS Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* Prompt-Container Section */
+#prompt-container {
+    display: none;
+}
+
+
+/* Main-Container Section */
+#main-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.apple-active .apple-container {
+    width: 75%;
+}
+
+.apple-active .redmi-container {
+    width: 25%;
+}
+
+.redmi-active .redmi-container {
+    width: 75%;
+}
+
+.redmi-active .apple-container {
+    width: 25%;
+}
+
+
+/* Apple-Container Section */
+.apple-container {
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: pink;
+    background-image: url("../Assets/apple.jpg");
+    background-size: 60% 80%;
+    background-repeat: no-repeat;
+    background-position: 80% 140%;
+    overflow: hidden;
+    transition: width 2s ease-in-out;
+}
+
+h1 {
+    color: aliceblue;
+    margin: 80px 0px;
+    font-size: 100px;
+    backdrop-filter: brightness(0.5);
+    letter-spacing: 4px;
+}
+
+.btn {
+    color: white;
+    background-color: black;
+    padding: 20px 40px;
+    font-size: 25px;
+    border: 4px solid;
+    cursor: pointer;
+    transition: background-color 1s;
+    white-space: nowrap;
+}
+
+.btn:hover {
+    color: black;
+    background-color: white;
+}
+
+
+/* Redmi-Container Section */
+.redmi-container {
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: lightblue;
+    background-image: url("../Assets/redmi.jpg");
+    background-size: 60% 80%;
+    background-repeat: no-repeat;
+    background-position: 80% 140%;
+    overflow: hidden;
+    transition: width 2s ease-in-out;
+}
+
+
+/* Footer Section */
+#footer {
+    color: white;
+    background-color: rgb(34, 33, 33);
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+}
+
+.copy,
+.info {
+    padding: 15px;
+}
+
+
+/* CSS Properties For Maximum Width 1000px */
+@media (max-width: 1000px) {
+
+    /* Prompt-Container Section ( For Maximum Width 1000px ) */
+    #prompt-container {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        color: #15d515;
+        background-color: black;
+    }
+
+    #prompt-container h2 {
+        margin-top: 25px;
+        margin-bottom: 50px;
+    }
+
+    #prompt-container h3 {
+        margin: 25px;
+    }
+
+
+    /* Main-Container Section ( For Maximum Width 1000px ) */
+    #main-container {
+        display: none;
+    }
+
+
+    /* Footer Section ( For Maximum Width 1000px ) */
+    #footer {
+        font-size: 17px;
+    }
+}
