@@ -1,0 +1,86 @@
+/* CSS Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* Main-Container Section */
+#main-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: cursive;
+    background-color: yellow;
+}
+
+
+/* Stats-Container Section */
+.stats-container {
+    position: relative;
+    margin: 20px;
+    padding: 20px;
+    height: 100px;
+    min-width: 200px;
+    border: 2px dotted green;
+}
+
+.stats-container h4 {
+    position: absolute;
+    left: 50%;
+    bottom: 20%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+
+.stats-container .icon {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.stats-container .counter {
+    color: green;
+    font-size: 50px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+/* Footer Section */
+#footer {
+    color: white;
+    background-color: rgb(34, 33, 33);
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+}
+
+.copy,
+.info {
+    padding: 15px;
+}
+
+
+/* CSS Properties For Maximum Width 850px */
+@media (max-width: 850px) {
+
+    /* Main-Container Section ( For Maximum Width 850px ) */
+    #main-container {
+        flex-direction: column;
+    }
+}
+
+
+/* CSS Properties For Maximum Width 400px */
+@media (max-width: 400px) {
+
+    /* Footer Section ( For Maximum Width 400px ) */
+    #footer {
+        font-size: 17px;
+    }
+}
