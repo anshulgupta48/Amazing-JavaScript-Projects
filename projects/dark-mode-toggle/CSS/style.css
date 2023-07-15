@@ -1,0 +1,90 @@
+/* CSS Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* Dark-Mode-Container Section */
+#dark-mode-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#input {
+    visibility: hidden;
+}
+
+.label {
+    position: absolute;
+    height: 40px;
+    width: 80px;
+    background-color: lightgray;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.circle {
+    height: 34px;
+    width: 34px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    animation: toggleOff 0.4s linear forwards;
+}
+
+#input:checked+.label {
+    background-color: white;
+}
+
+#input:checked+.label .circle {
+    animation: toggleOn 0.4s linear forwards;
+    background-color: black;
+}
+
+@keyframes toggleOn {
+    0% {
+        transform: translateX(0px);
+    }
+
+    100% {
+        transform: translateX(40px);
+    }
+}
+
+@keyframes toggleOff {
+    0% {
+        transform: translateX(40px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+
+/* Footer Section */
+#footer {
+    color: white;
+    background-color: rgb(34, 33, 33);
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+}
+
+.copy,
+.info {
+    padding: 15px;
+}
+
+
+/* CSS Properties For Maximum Width 400px */
+@media (max-width: 400px) {
+    #footer {
+        font-size: 17px;
+    }
+}
