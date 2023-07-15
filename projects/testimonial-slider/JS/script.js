@@ -1,8 +1,14 @@
+// <======== Initializing Variables ========>
 const userImage = document.querySelector("img")
 const userFeedback = document.querySelector(".userFeedback");
 const userName = document.querySelector(".userName");
-let index = 0;
 
+
+updateTestimonial();
+
+
+// <======== JS Program to Run Testimonial Slider ========>
+let index = 0;
 const testimonials = [
     {
         name: "Cherise G",
@@ -20,8 +26,6 @@ const testimonials = [
         text: "Thank you for making it painless, pleasant and most of all hassle free! I wish I would have thought of it first. The very best.",
     },
 ];
-
-updateTestimonial();
 
 function updateTestimonial() {
     const { name, photoUrl, text } = testimonials[index];
