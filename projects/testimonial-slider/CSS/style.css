@@ -1,0 +1,84 @@
+/* CSS Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* Main-Container Section */
+#main-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: cursive;
+}
+
+
+/* Testimonial-Container Section */
+.testimonial-container {
+    height: 100px;
+    width: 500px;
+    margin: 5px;
+    padding: 70px 20px;
+    color: white;
+    background-color: slateblue;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.testimonial-container img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.testimonial-container .userFeedback {
+    margin: 10px 0px 20px 0px;
+}
+
+.testimonial-container .userName {
+    font-size: 13px;
+    font-weight: 800;
+}
+
+
+/* Footer Section */
+#footer {
+    color: white;
+    background-color: rgb(34, 33, 33);
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+}
+
+.copy,
+.info {
+    padding: 15px;
+}
+
+
+/* CSS Properties For Maximum Width 400px */
+@media (max-width: 400px) {
+
+    /* Testimonial-Container Section ( For Maximum Width 400px ) */
+    .testimonial-container {
+        height: 150px;
+        width: 250px;
+    }
+
+    .testimonial-container .userFeedback {
+        margin: 10px 0px 40px 0px;
+    }
+
+
+    /* Footer Section ( For Maximum Width 400px ) */
+    #footer {
+        font-size: 17px;
+    }
+}
