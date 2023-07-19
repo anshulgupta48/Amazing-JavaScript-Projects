@@ -1,0 +1,103 @@
+/* CSS Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* Main-Container Section */
+#main-container {
+    min-height: 90vh;
+    padding: 40px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+}
+
+.form {
+    width: 400px;
+    background-color: yellow;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.input {
+    width: 100%;
+    padding: 20px;
+    border: none;
+    border-radius: 10px 10px 0px 0px;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: cursive;
+}
+
+.input::placeholder {
+    color: lightgray;
+}
+
+.list li {
+    padding: 20px;
+    list-style-type: none;
+    border-top: 1px darkgray dotted;
+    position: relative;
+    font-family: cursive;
+}
+
+.list li .fa-trash {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: red;
+    cursor: pointer;
+}
+
+.list li .fa-check-square {
+    position: absolute;
+    top: 50%;
+    right: 40px;
+    transform: translateY(-50%);
+    color: green;
+    cursor: pointer;
+}
+
+.list li.checked {
+    color: darkgray;
+    text-decoration: line-through;
+}
+
+.list li.checked .fa-check-square {
+    color: darkgray;
+}
+
+
+/* Footer Section */
+#footer {
+    color: white;
+    background-color: rgb(34, 33, 33);
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+}
+
+.copy,
+.info {
+    padding: 15px;
+}
+
+
+/* CSS Properties For Maximum Width 450px */
+@media (max-width: 450px) {
+
+    /* Main-Container Section ( For Maximum Width 450px ) */
+    .form {
+        width: 250px;
+    }
+
+
+    /* Footer Section ( For Maximum Width 450px ) */
+    #footer {
+        font-size: 17px;
+    }
+}
