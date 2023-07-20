@@ -1,0 +1,47 @@
+/* Importing Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+
+
+/* CSS Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* Animation-Container Section */
+#animation-container {
+    height: 100vh;
+    padding: 0px 40px;
+    background-color: salmon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Permanent Marker", cursive;
+}
+
+
+/* Footer Section */
+#footer {
+    color: white;
+    background-color: rgb(34, 33, 33);
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+}
+
+.copy,
+.info {
+    padding: 15px;
+}
+
+
+/* CSS Properties For Maximum Width 400px */
+@media (max-width: 400px) {
+
+    /* Footer Section ( For Maximum Width 400px ) */
+    #footer {
+        font-size: 17px;
+    }
+}
