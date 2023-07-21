@@ -1,0 +1,79 @@
+/* CSS Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* Loading-Container Section */
+#loading-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: black;
+    font-family: cursive;
+}
+
+#loading-container .loading-container-box {
+    position: relative;
+    width: 250px;
+    text-align: center;
+}
+
+#loading-container h1 {
+    margin: 15px 0px;
+    font-family: cursive;
+}
+
+#loading-container .percentage-container {
+    font-size: 40px;
+}
+
+#loading-container hr {
+    margin: 5px 0px;
+}
+
+#loading-container .loading-bar-back {
+    position: absolute;
+    height: 8px;
+    width: 100%;
+    background-color: lightgray;
+    border: none;
+    border-radius: 5px;
+}
+
+#loading-container .loading-bar-front {
+    position: absolute;
+    height: 8px;
+    width: 0%;
+    background-color: orangered;
+    border: none;
+    border-radius: 5px;
+}
+
+
+/* Footer Section */
+#footer {
+    color: white;
+    background-color: rgb(34, 33, 33);
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+}
+
+.copy,
+.info {
+    padding: 15px;
+}
+
+
+/* CSS Properties For Maximum Width 400px */
+@media (max-width: 400px) {
+
+    /* Footer Section ( For Maximum Width 400px ) */
+    #footer {
+        font-size: 17px;
+    }
+}
