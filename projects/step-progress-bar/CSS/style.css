@@ -1,0 +1,127 @@
+/* CSS Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* Main-Container Section */
+#main-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: yellow;
+}
+
+.step-progress-container {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.progress-bar-back {
+    height: 4px;
+    width: 100%;
+    background-color: lightgray;
+    border: none;
+    z-index: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.progress-bar-front {
+    height: 4px;
+    width: 0%;
+    background-color: green;
+    border: none;
+    z-index: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: width 0.4s linear;
+}
+
+.step {
+    height: 30px;
+    width: 30px;
+    color: lightgray;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid lightgray;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.step.checked {
+    color: green;
+    border-color: green;
+    transition: all 0.4s linear;
+    transition-delay: 0.3s;
+}
+
+.step.checked small {
+    position: absolute;
+    bottom: -20px;
+    font-family: cursive;
+}
+
+.btn {
+    margin: 70px 10px 0px;
+    padding: 10px 20px;
+    color: white;
+    background-color: slateblue;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.btn:disabled {
+    background-color: lightgray;
+}
+
+
+/* Footer Section */
+#footer {
+    color: white;
+    background-color: rgb(34, 33, 33);
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+}
+
+.copy,
+.info {
+    padding: 15px;
+}
+
+
+/* CSS Properties For Maximum Width 600px */
+@media (max-width: 600px) {
+
+    /* Main-Container Section ( For Maximum Width 600px ) */
+    .step-progress-container {
+        width: 90vw;
+    }
+
+    
+    /* Footer Section ( For Maximum Width 600px ) */
+    #footer {
+        font-size: 17px;
+    }
+}
