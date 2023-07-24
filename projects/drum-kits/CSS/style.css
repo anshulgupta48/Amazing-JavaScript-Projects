@@ -1,0 +1,84 @@
+/* CSS Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* Drum-Kit-Container Section */
+#drum-kit-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: pink;
+}
+
+.drum-kit-text h1 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    letter-spacing: 4px;
+    white-space: nowrap;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.drum-kit-btn .btn {
+    min-width: 200px;
+    margin: 10px;
+    padding: 30px 50px;
+    color: white;
+    background-color: white;
+    background-image: url("images/tom.png");
+    background-size: cover;
+    border: none;
+    border-radius: 10px;
+    font-size: 30px;
+    font-family: cursive;
+    text-transform: capitalize;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.drum-kit-btn .btn:hover {
+    color: pink;
+}
+
+.drum-kit-btn .btn:active {
+    background-size: 105%;
+}
+
+
+/* Footer Section */
+#footer {
+    color: white;
+    background-color: rgb(34, 33, 33);
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+}
+
+.copy,
+.info {
+    padding: 15px;
+}
+
+
+/* CSS Properties For Maximum Width 400px */
+@media (max-width: 400px) {
+
+    /* Drum-Kit-Container Section ( For Maximum Width 400px ) */
+    .drum-kit-text h1 {
+        font-size: 40px;
+    }
+
+
+    /* Footer Section ( For Maximum Width 400px ) */
+    #footer {
+        font-size: 17px;
+    }
+}
