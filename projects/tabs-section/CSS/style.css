@@ -1,0 +1,159 @@
+/* CSS Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* Main-Container Section */
+#main-container {
+    padding: 40px 0px;
+    color: grey;
+    background: #f5abc9;
+    display: flex;
+    justify-content: space-between;
+    font-family: sans-serif;
+}
+
+
+/* Image-Container Section */
+.image-container {
+    margin-left: 40px;
+    width: 45%;
+}
+
+.image-container img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+/* Tabs-Container Section */
+.tabs-section-container {
+    width: 45%;
+    margin: 0px 40px;
+    background: #ffe5e2;
+    border-radius: 10px;
+}
+
+
+/* Tabs-Btn-Container Section */
+.tabs-btn-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.btn:nth-child(1) {
+    border-top-left-radius: 0.5rem;
+}
+
+.btn:nth-child(3) {
+    border-top-right-radius: 0.5rem;
+}
+
+.btn {
+    padding: 20px 0;
+    background: #b6c9f0;
+    font-size: 16px;
+    letter-spacing: 2px;
+    transition: all 0.4s linear;
+    border: none;
+    cursor: pointer;
+}
+
+.btn.live {
+    background: #ffe5e2;
+}
+
+.btn:hover:not(.live) {
+    color: white;
+    background: #e93b81;
+}
+
+
+/* Tabs-Text-Container Section */
+.tabs-text-container {
+    padding: 20px;
+}
+
+.tabs-content {
+    display: none;
+}
+
+.tabs-content h3 {
+    padding: 20px 0px;
+}
+
+.tabs-content.live {
+    display: block;
+}
+
+
+/* Footer Section */
+#footer {
+    color: white;
+    background-color: rgb(34, 33, 33);
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+}
+
+.copy,
+.info {
+    padding: 15px;
+}
+
+
+/* CSS Properties For Maximum Width 1200px */
+@media (max-width: 1200px) {
+
+    /* Main-Container Section ( For Maximum Width 1200px ) */
+    #main-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    /* Image-Container Section ( For Maximum Width 1200px ) */
+    .image-container {
+        width: 80%;
+        margin: 0px 20px 20px 30px;
+    }
+
+
+    /* Tabs-Container Section ( For Maximum Width 1200px ) */
+    .tabs-section-container {
+        width: 80%;
+        margin: 0px 20px 20px 30px;
+    }
+}
+
+
+/* CSS Properties For Maximum Width 400px */
+@media (max-width: 400px) {
+
+    /* Main-Container Section ( For Maximum Width 400px ) */
+    #main-container {
+        flex-direction: column;
+    }
+
+
+    /* Image-Container Section ( For Maximum Width 400px ) */
+    .image-container {
+        width: 80%;
+        margin: 0px 20px 20px 30px;
+    }
+
+
+    /* Tabs-Container Section ( For Maximum Width 400px ) */
+    .tabs-section-container {
+        width: 80%;
+        margin: 0px 20px 20px 30px;
+    }
+
+
+    /* Footer Section ( For Maximum Width 400px ) */
+    #footer {
+        font-size: 17px;
+    }
+}
