@@ -1,0 +1,117 @@
+/* CSS Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* SideBar-Menu-Container Section */
+#sidebar-menu-container {
+    height: 100vh;
+    background: #ebebeb;
+    font-family: sans-serif;
+}
+
+.fa-bars {
+    position: fixed;
+    top: 2rem;
+    right: 3rem;
+    color: #e94949;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.fa-bars:hover {
+    color: black;
+}
+
+
+/* SideBar-Container Section */
+.sidebar-container {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: white;
+    transition: all 0.3s linear;
+    transform: translate(-100%);
+}
+
+.sidebar-container.show {
+    transform: translate(0%);
+}
+
+
+/* Image-Container Section */
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem 1rem 0.5rem;
+}
+
+.logo {
+    margin-left: -15px;
+}
+
+.fa-times {
+    font-size: 1.5rem;
+    color: #e94949;
+    cursor: pointer;
+}
+
+.fa-times:hover {
+    color: black;
+}
+
+
+/* Navigation-Container Section */
+.navigation-container a {
+    display: block;
+    padding: 1rem 1.5rem;
+    color: grey;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: all 0.3s linear;
+}
+
+.navigation-container a:hover {
+    background: #f8a5a5;
+    padding-left: 1.7rem;
+}
+
+
+/* Footer Section */
+#footer {
+    color: white;
+    background-color: rgb(34, 33, 33);
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+}
+
+.copy,
+.info {
+    padding: 15px;
+}
+
+
+/* CSS Properties For Minimum Width 676px */
+@media (min-width: 676px) {
+
+    /* SideBar-Container Section ( For Maximum Width 676px ) */
+    .sidebar-container {
+        width: 500px;
+    }
+}
+
+
+/* CSS Properties For Maximum Width 400px */
+@media (max-width: 400px) {
+
+    /* Footer Section ( For Maximum Width 400px ) */
+    #footer {
+        font-size: 17px;
+    }
+}
