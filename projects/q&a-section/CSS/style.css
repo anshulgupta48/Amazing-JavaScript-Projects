@@ -1,0 +1,114 @@
+/* CSS Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* Main-Container Section */
+#main-container {
+    min-height: 100vh;
+    background: #ebebeb;
+    font-family: sans-serif;
+}
+
+.question-answer-container {
+    height: 100vh;
+    padding: 40px 0px 20px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.question {
+    max-width: 420px;
+    margin-bottom: 2rem;
+    padding: 1.5rem 1.5rem 0 1.5rem;
+    background: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.question-title {
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+.question-title p {
+    color: yellowgreen;
+    font-weight: bolder;
+    letter-spacing: 0.1rem;
+}
+
+.question-btn {
+    margin-left: 40px;
+    color: yellowgreen;
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.question-text {
+    padding: 1rem 0 1.5rem 0;
+    border-top: 1px solid grey;
+}
+
+.question-text {
+    display: none;
+}
+
+.show-text .question-text {
+    display: block;
+}
+
+.minus-icon {
+    display: none;
+}
+
+.show-text .minus-icon {
+    display: inline;
+}
+
+.show-text .plus-icon {
+    display: none;
+}
+
+
+/* Footer Section */
+#footer {
+    color: white;
+    background-color: rgb(34, 33, 33);
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+}
+
+.copy,
+.info {
+    padding: 15px;
+}
+
+
+/* CSS Properties For Maximum Width 500px */
+@media (max-width: 500px) {
+
+    /* Main-Container Section ( For Maximum Width 500px ) */
+    .question {
+        margin: 0 2rem 2rem 2rem;
+    }
+
+    .question-title p {
+        font-size: 14px;
+    }
+
+
+    /* Footer Section ( For Maximum Width 500px ) */
+    #footer {
+        font-size: 17px;
+    }
+}
