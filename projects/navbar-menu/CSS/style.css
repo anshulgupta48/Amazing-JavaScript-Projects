@@ -1,0 +1,136 @@
+/* CSS Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* Navbar-Container Section */
+#navbar-container {
+    height: 100vh;
+    font-family: sans-serif;
+    background-color: #f1f5f8;
+}
+
+.navbar-menu {
+    padding: 20px 40px;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Navbar-Image-Container Section */
+.navbar-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fa-bars {
+    padding-top: 10px;
+    color: #e94949;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.fa-bars:hover {
+    color: black;
+}
+
+
+/* Navbar-Navigation-Container Section */
+.navbar-navigation-container ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.navbar-navigation-container.show ul {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+}
+
+.navbar-navigation-container a {
+    text-decoration: none;
+    padding: 0px 10px;
+    cursor: pointer;
+    transition: all 0.4s linear;
+}
+
+.navbar-navigation-container a:hover {
+    color: #e94949;
+}
+
+
+/* Footer Section */
+#footer {
+    padding: 5px;
+    color: white;
+    background-color: rgb(34, 33, 33);
+    text-align: center;
+    font-size: 20px;
+}
+
+.copy,
+.info {
+    padding: 15px;
+}
+
+
+/* CSS Properties For Minimum Width 500px */
+@media (min-width: 500px) {
+
+    /* Navbar-Image-Container Section ( For Minimum Width 500px ) */
+    .navbar-image-container .fa-bars {
+        display: none;
+    }
+}
+
+
+/* CSS Properties For Maximum Width 500px */
+@media (max-width: 500px) {
+
+    /* Navbar-Menu Section ( For Maximum Width 500px ) */
+    .navbar-menu {
+        padding: 10px 20px 20px 10px;
+        flex-direction: column;
+    }
+
+
+    /* Navbar-Image-Container Section ( For Maximum Width 500px ) */
+    .navbar-image-container {
+        width: 100%;
+    }
+
+
+    /* Navbar-Navigation-Container Section ( For Maximum Width 500px ) */
+    .navbar-navigation-container {
+        display: none;
+    }
+
+    .navbar-navigation-container.show {
+        height: 100px;
+        width: 100%;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-navigation-container.show ul li {
+        margin: 10px 20px;
+        text-align: left;
+    }
+
+
+    /* Footer Section ( For Maximum Width 500px ) */
+    #footer {
+        font-size: 17px;
+    }
+}
