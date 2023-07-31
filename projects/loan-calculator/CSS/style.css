@@ -1,0 +1,68 @@
+/* CSS Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* Main-Container Section */
+#main-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.loan-calculator-container {
+    padding: 20px;
+    color: aliceblue;
+    background-color: darkcyan;
+    border-radius: 10px;
+}
+
+.loan-calculator-container p {
+    margin: 20px 0px;
+}
+
+.input {
+    height: 30px;
+    width: 100%;
+    font-size: 20px;
+}
+
+.payment {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+/* Footer Section */
+#footer {
+    color: white;
+    background-color: rgb(34, 33, 33);
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+}
+
+.copy,
+.info {
+    padding: 15px;
+}
+
+
+/* CSS Properties For Maximum Width 400px */
+@media (max-width: 400px) {
+
+    /* Main-Container Section ( For Maximum Width 400px ) */
+    .loan-calculator-container {
+        margin: 5px;
+    }
+
+
+    /* Footer Section ( For Maximum Width 400px ) */
+    #footer {
+        font-size: 17px;
+    }
+}
