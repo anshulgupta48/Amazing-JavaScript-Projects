@@ -1,0 +1,96 @@
+/* CSS Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* Main-Container Section */
+#main-container {
+    height: 100vh;
+    background: linear-gradient(to left bottom, lightgreen, lightblue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.bmi-calculator-container {
+    margin: 5px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.4);
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+.bmi-calculator-container .heading {
+    margin: 20px 0px;
+    font-size: 30px;
+}
+
+.bmi-calculator-container .input {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
+.bmi-calculator-container .btn {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: lightgreen;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+}
+
+.bmi-calculator-container .btn:hover {
+    transition: all 300ms ease;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.4);
+}
+
+.bmi-calculator-container .info-text {
+    margin: 10px 0px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+/* Footer Section */
+#footer {
+    color: white;
+    background-color: rgb(34, 33, 33);
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+}
+
+.copy,
+.info {
+    padding: 15px;
+}
+
+
+/* CSS Properties For Maximum Width 400px */
+@media (max-width: 400px) {
+
+    /* Main-Container Section ( For Maximum Width 400px ) */
+    .bmi-calculator-container {
+        padding: 20px 0px;
+    }
+
+    .bmi-calculator-container .heading {
+        font-size: 23px;
+        text-align: center;
+    }
+
+
+    /* Footer Section ( For Maximum Width 400px ) */
+    #footer {
+        font-size: 17px;
+    }
+}
