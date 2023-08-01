@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator - Lets Calculate Your BMI ( Body Mass Index )</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- <======== Main-Container Section ========> -->
+        <div id="main-container">
+            <div class="bmi-calculator-container">
+                <h1 class="heading">Body Mass Index (BMI) Calculator</h1>
+
+                Your Height (cm):
+                <input type="number" value="180" class="input" id="height" placeholder="Enter Your Height in cm">
+
+                Your Weight (kg):
+                <input type="number" value="80" class="input" id="weight" placeholder="Enter Your Weight in kg">
+
+                <button class="btn" id="btn">Compute BMI</button>
+                <input disabled type="text" class="input" id="bmi-result">
+
+                <h4 class="info-text">Weight Condition:
+                    <span id="weight-condition"></span>
+                </h4>
+            </div>
+        </div>
+
+
+        <!-- <======== Footer Section ========> -->
+        <div id="footer">
+            <p class="copy">Copyright © 2023 BMI Calculator | All Rights Reserved</p>
+            <hr>
+            <p class="info">Design &amp; Developed by Anshul Gupta</p>
+        </div>
+    </div>
+
+    <script src="JS/script.js"></script>
+</body>
+
+</html>
