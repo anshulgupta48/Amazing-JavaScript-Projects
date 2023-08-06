@@ -1,0 +1,90 @@
+/* CSS Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* Main-Container Section */
+#main-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.currency-convertor-container {
+    color: white;
+    background-color: darkcyan;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.currency-convertor-container h1 {
+    margin: 20px 0px;
+}
+
+.currency-container {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.currency-container select {
+    padding: 10px;
+}
+
+.currency-container input {
+    width: 100%;
+    color: aliceblue;
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+    text-align: right;
+}
+
+.currency-container select:focus,
+.currency-container input:focus {
+    outline: 0;
+}
+
+.exchange-rate {
+    margin: 15px 0px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+/* Footer Section */
+#footer {
+    color: white;
+    background-color: rgb(34, 33, 33);
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+}
+
+.copy,
+.info {
+    padding: 15px;
+}
+
+
+/* CSS Properties For Maximum Width 400px */
+@media (max-width: 400px) {
+
+    /* Main-Container Section ( For Maximum Width 400px ) */
+    .currency-convertor-container {
+        max-width: 250px;
+        margin: 0px 10px;
+    }
+
+
+    /* Footer Section ( For Maximum Width 400px ) */
+    #footer {
+        font-size: 17px;
+    }
+}
