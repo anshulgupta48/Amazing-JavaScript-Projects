@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Convertor - Lets Convert Your Currency</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- <======== Main-Container Section ========> -->
+        <div id="main-container">
+            <div class="currency-convertor-container">
+                <h1>Currency Convertor</h1>
+
+                <div class="currency-container">
+                    <select id="currency-first">
+                        <option value="AUD">AUD</option>
+                        <option value="CAD">CAD</option>
+                        <option value="EUR">EUR</option>
+                        <option value="GBP">GBP</option>
+                        <option value="INR">INR</option>
+                        <option value="JPY">JPY</option>
+                        <option value="USD" selected>USD</option>
+                    </select>
+
+                    <input type="number" id="worth-first" value="1" min="0">
+                </div>
+
+                <div class="currency-container">
+                    <select id="currency-second">
+                        <option value="AUD">AUD</option>
+                        <option value="CAD">CAD</option>
+                        <option value="EUR">EUR</option>
+                        <option value="GBP">GBP</option>
+                        <option value="INR" selected>INR</option>
+                        <option value="JPY">JPY</option>
+                        <option value="USD">USD</option>
+                    </select>
+
+                    <input type="number" id="worth-second" value="1" min="0" disabled>
+                </div>
+
+                <p class="exchange-rate" id="exchange-rate">1 USD = 82.08 INR</p>
+            </div>
+        </div>
+
+
+        <!-- <======== Footer Section ========> -->
+        <div id="footer">
+            <p class="copy">Copyright © 2023 Currency Convertor | All Rights Reserved</p>
+            <hr>
+            <p class="info">Design &amp; Developed by Anshul Gupta</p>
+        </div>
+    </div>
+
+    <script src="JS/script.js"></script>
+</body>
+
+</html>
