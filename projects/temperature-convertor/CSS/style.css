@@ -1,0 +1,106 @@
+/* CSS Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* Main-Container Section */
+#main-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: darkcyan;
+    background: linear-gradient(to left bottom, lightgreen, lightblue);
+    font-family: monospace;
+}
+
+.temperature-convertor-container {
+    width: 85%;
+    max-width: 450px;
+    min-width: 350px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading {
+    margin: 20px 0px;
+    font-size: 32px;
+}
+
+.temperature-container {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.input {
+    width: 220px;
+    padding: 5px;
+    float: right;
+    color: darkgreen;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-color: rgba(255, 255, 255, 0.6);
+    font-size: 18px;
+    font-family: monospace;
+    outline: none;
+}
+
+.input::placeholder {
+    color: darkgray;
+}
+
+
+/* Footer Section */
+#footer {
+    color: white;
+    background-color: rgb(34, 33, 33);
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+}
+
+.copy,
+.info {
+    padding: 15px;
+}
+
+
+/* CSS Properties For Maximum Width 400px */
+@media (max-width: 400px) {
+
+    /* Main-Container Section ( For Maximum Width 400px ) */
+    .temperature-convertor-container {
+        min-width: 250px;
+        margin: 0px 10px;
+        padding: 20px 0px;
+    }
+
+    .heading {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .temperature-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .input {
+        margin: 5px 0px;
+    }
+
+
+    /* Footer Section ( For Maximum Width 400px ) */
+    #footer {
+        font-size: 17px;
+    }
+}
