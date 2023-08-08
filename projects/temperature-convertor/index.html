@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Convertor - Best Tool for Converting Temperature</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- <======== Main-Container Section ========> -->
+        <div id="main-container">
+            <div class="temperature-convertor-container">
+                <h1 class="heading">Temperature Convertor</h1>
+
+                <div class="temperature-container">
+                    <label for="celsius">Celsius:</label>
+                    <input type="number" name="celsius" class="input" id="celsius" placeholder="Enter Temperature"
+                        onchange="computeTemperature(event)" value="0">
+                </div>
+
+                <div class="temperature-container">
+                    <label for="fahrenheit">Fahrenheit:</label>
+                    <input type="number" name="fahrenheit" class="input" id="fahrenheit" placeholder="Enter Temperature"
+                        onchange="computeTemperature(event)" value="32.00">
+                </div>
+
+                <div class="temperature-container">
+                    <label for="kelvin">Kelvin:</label>
+                    <input type="number" name="kelvin" class="input" id="kelvin" placeholder="Enter Temperature"
+                        onchange="computeTemperature(event)" value="273.72">
+                </div>
+            </div>
+        </div>
+
+
+        <!-- <======== Footer Section ========> -->
+        <div id="footer">
+            <p class="copy">Copyright © 2023 Temperature Convertor | All Rights Reserved</p>
+            <hr>
+            <p class="info">Design &amp; Developed by Anshul Gupta</p>
+        </div>
+    </div>
+
+    <script src="JS/script.js"></script>
+</body>
+
+</html>
