@@ -1,0 +1,122 @@
+/* CSS Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* Main-Container Section */
+#main-container {
+    min-height: 100vh;
+    background: linear-gradient(to bottom, lightgreen, lightblue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.photo-gallery-container {
+    width: 90%;
+    margin: 10px;
+    padding: 20px;
+    background-color: aliceblue;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.photo-gallery-container h2 {
+    margin: 20px 0px;
+    font-weight: 400;
+}
+
+.photo-gallery-container .input {
+    width: 100px;
+    padding: 20px 10px;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.photo-gallery-container .errorMessage {
+    display: none;
+    margin: 10px;
+    color: red;
+    font-weight: 600;
+}
+
+.photo-gallery-container .btn {
+    height: 45px;
+    width: 250px;
+    margin: 20px 0px;
+    color: aliceblue;
+    background-color: black;
+    border-radius: 5px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.photo-gallery-container .btn:hover {
+    color: aliceblue;
+    background-color: green;
+    transition: background-color 300ms ease-in-out;
+    cursor: pointer;
+}
+
+.gallery-container {
+    display: none;
+}
+
+.gallery-container img {
+    height: 250px;
+    width: 400px;
+    margin: 5px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+
+/* Footer Section */
+#footer {
+    color: white;
+    background-color: rgb(34, 33, 33);
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+}
+
+.copy,
+.info {
+    padding: 15px;
+}
+
+
+/* CSS Properties For Maximum Width 400px */
+@media (max-width: 400px) {
+
+    /* Main-Container Section ( For Maximum Width 400px ) */
+    .photo-gallery-container {
+        padding: 20px 5px;
+    }
+
+    .photo-gallery-container h2 {
+        font-size: 23px;
+        font-weight: 400;
+    }
+
+    .gallery-container img {
+        width: 250px;
+    }
+
+
+    /* Footer Section ( For Maximum Width 400px ) */
+    #footer {
+        font-size: 17px;
+    }
+}
