@@ -1,0 +1,111 @@
+/* CSS Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* Main-Container Section */
+#main-container {
+    min-height: 100vh;
+    color: darkgreen;
+    background-color: lightcyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+}
+
+.feedback-ui-container {
+    width: 85%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.heading {
+    margin: 5px;
+    font-size: 30px;
+}
+
+.ratings-container {
+    display: flex;
+    padding: 20px 0px;
+}
+
+.rating {
+    margin: 10px 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.rating:hover,
+.rating.active {
+    color: aliceblue;
+    background-color: darkseagreen;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    transition: all 300ms ease;
+}
+
+.rating img {
+    width: 40px;
+}
+
+.btn {
+    margin: 10px;
+    padding: 12px 30px;
+    color: aliceblue;
+    background-color: darkcyan;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn:active {
+    transform: scale(0.96);
+}
+
+.btn:hover {
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+    transition: all 300ms ease;
+}
+
+
+/* Footer Section */
+#footer {
+    color: white;
+    background-color: rgb(34, 33, 33);
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+}
+
+.copy,
+.info {
+    padding: 15px;
+}
+
+
+/* CSS Properties For Maximum Width 400px */
+@media (max-width: 400px) {
+
+    /* Main-Container Section ( For Maximum Width 400px ) */
+    .feedback-ui-container {
+        padding: 20px 0px;
+    }
+
+    .rating {
+        margin: 10px -6px;
+    }
+
+
+    /* Footer Section ( For Maximum Width 400px ) */
+    #footer {
+        font-size: 17px;
+    }
+}
