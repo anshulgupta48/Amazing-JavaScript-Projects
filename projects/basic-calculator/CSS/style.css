@@ -1,0 +1,103 @@
+/* CSS Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* Main-Container Section */
+#main-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to left, lightblue, lightgreen);
+    box-sizing: border-box;
+}
+
+.calculator-container {
+    max-width: 400px;
+    margin: 0px auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+    border: solid 1px #ccc;
+    border-radius: 5px;
+}
+
+#result {
+    width: 94%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 24px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4) inset;
+}
+
+.btn-container {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.btn-container button {
+    padding: 10px;
+    font-size: 24px;
+    border: none;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+}
+
+.btn-container button:hover {
+    background-color: #ddd;
+}
+
+.clear {
+    color: #fff;
+    background-color: #ff4136;
+}
+
+.number,
+.decimal {
+    color: #333;
+    background-color: #fff;
+}
+
+.operator {
+    color: #fff;
+    background-color: #0074d9;
+}
+
+.equal {
+    color: #fff;
+    background-color: #01ff70;
+    grid-row: span 3;
+}
+
+
+/* Footer Section */
+#footer {
+    color: white;
+    background-color: rgb(34, 33, 33);
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+}
+
+.copy,
+.info {
+    padding: 15px;
+}
+
+
+/* CSS Properties For Maximum Width 400px */
+@media (max-width: 400px) {
+
+    /* Footer Section ( For Maximum Width 400px ) */
+    #footer {
+        font-size: 17px;
+    }
+}
