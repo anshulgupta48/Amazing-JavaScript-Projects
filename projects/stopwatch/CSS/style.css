@@ -1,0 +1,82 @@
+/* CSS Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* Main-Container Section */
+#main-container {
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    overflow: hidden;
+}
+
+#timer {
+    width: 600px;
+    margin: 40px auto;
+    color: #f92672;
+    font-size: 60px;
+    font-weight: 700;
+    text-shadow: 2px 2px #f8a5c2;
+    text-align: center;
+}
+
+#btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    margin: 10px;
+    padding: 20px 40px;
+    color: white;
+    background-color: #f92672;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+button:hover {
+    background-color: #f44583;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+button[disabled] {
+    opacity: 0.5;
+    cursor: default;
+}
+
+
+/* Footer Section */
+#footer {
+    color: white;
+    background-color: rgb(34, 33, 33);
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+}
+
+.copy,
+.info {
+    padding: 15px;
+}
+
+
+/* CSS Properties For Maximum Width 400px */
+@media (max-width: 400px) {
+
+    /* Footer Section ( For Maximum Width 400px ) */
+    #footer {
+        font-size: 17px;
+    }
+}
