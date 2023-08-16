@@ -1,0 +1,100 @@
+/* CSS Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* Main-Container Section */
+#main-container {
+    min-height: 100vh;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Arial", sans-serif;
+}
+
+.game-container h1 {
+    margin: 20px 0px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.game-container p {
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.game-container .btn-container {
+    margin: 15px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.game-container .btn {
+    margin: 10px;
+    padding: 10px;
+    font-size: 45px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.game-container .btn:hover {
+    opacity: 0.6;
+}
+
+.game-container #rock {
+    background-color: #ff0000;
+}
+
+.game-container #paper {
+    background-color: #2196f3;
+}
+
+.game-container #scissors {
+    background-color: #4caf50;
+}
+
+.game-container #user-score {
+    color: #2196f3;
+}
+
+.game-container #computer-score {
+    color: #ff0000;
+}
+
+
+/* Footer Section */
+#footer {
+    color: white;
+    background-color: rgb(34, 33, 33);
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+}
+
+.copy,
+.info {
+    padding: 15px;
+}
+
+
+/* CSS Properties For Maximum Width 400px */
+@media (max-width: 400px) {
+
+    /* Main-Container Section ( For Maximum Width 400px ) */
+    .game-container h1 {
+        font-size: 35px;
+    }
+
+
+    /* Footer Section ( For Maximum Width 400px ) */
+    #footer {
+        font-size: 17px;
+    }
+}
