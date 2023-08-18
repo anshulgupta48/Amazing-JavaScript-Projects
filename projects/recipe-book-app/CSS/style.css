@@ -1,0 +1,138 @@
+/* CSS Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* Recipe-Book-Container */
+#recipe-book-container {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+#header {
+    padding: 20px;
+    color: #fff;
+    background: #0c2461;
+    text-align: center;
+}
+
+#header h1 {
+    font-size: 36px;
+}
+
+#recipe-info-container {
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 20px;
+}
+
+.recipe-list {
+    list-style: none;
+}
+
+.recipe-item {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.recipe-item img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+}
+
+.recipe-item h2 {
+    min-width: 200px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.recipe-item p {
+    padding: 10px;
+    color: #777;
+}
+
+.recipe-item a {
+    min-width: 150px;
+    padding: 10px;
+    color: #fff;
+    background-color: #0c2461;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+.recipe-item a:hover {
+    background-color: #1e3799;
+}
+
+
+/* Footer Section */
+#footer {
+    color: white;
+    background-color: rgb(34, 33, 33);
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+}
+
+.copy,
+.info {
+    padding: 15px;
+}
+
+
+/* CSS Properties For Maximum Width 768px */
+@media screen and (max-width: 768px) {
+
+    /* Recipe-Book-Container Section ( For Maximum Width 768px ) */
+    .recipe-item {
+        flex-direction: column;
+    }
+
+    .recipe-item img {
+        height: auto;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .recipe-item h2 {
+        margin-bottom: 10px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .recipe-item p {
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+    .recipe-item a {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+/* CSS Properties For Maximum Width 400px */
+@media (max-width: 400px) {
+
+    /* Recipe-Book-Container Section ( For Maximum Width 400px ) */
+    #header h1 {
+        font-size: 25px;
+    }
+
+
+    /* Footer Section ( For Maximum Width 400px ) */
+    #footer {
+        font-size: 17px;
+    }
+}
