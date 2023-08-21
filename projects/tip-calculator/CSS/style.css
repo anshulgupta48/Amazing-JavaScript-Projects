@@ -1,0 +1,95 @@
+/* CSS Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* Main-Container Section */
+#main-container {
+    min-height: 100vh;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Helvetica", sans-serif;
+}
+
+.tip-calculator-container {
+    width: 600px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.tip-calculator-container h1 {
+    text-align: center;
+}
+
+.tip-calculator-container p {
+    margin: 30px 0px;
+    text-align: center;
+}
+
+.tip-calculator-container input {
+    width: 96%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.tip-calculator-container .btn {
+    width: 100%;
+    margin: 20px 0;
+    padding: 10px;
+    color: white;
+    background-color: #4caf50;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.2s ease;
+}
+
+.tip-calculator-container .btn:hover {
+    background-color: #45a049;
+}
+
+.tip-calculator-container #totalAmount {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+/* Footer Section */
+#footer {
+    color: white;
+    background-color: rgb(34, 33, 33);
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+}
+
+.copy,
+.info {
+    padding: 15px;
+}
+
+
+/* CSS Properties For Maximum Width 400px */
+@media (max-width: 400px) {
+
+    /* Main-Container Section ( For Maximum Width 400px ) */
+    .tip-calculator-container input {
+        width: 92%;
+    }
+
+
+    /* Footer Section ( For Maximum Width 400px ) */
+    #footer {
+        font-size: 17px;
+    }
+}
